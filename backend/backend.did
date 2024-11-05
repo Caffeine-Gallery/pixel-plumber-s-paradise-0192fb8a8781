@@ -1,0 +1,7 @@
+service : {
+  getHighScores: () -> (vec record {
+                              text;
+                              nat;
+                            }) query;
+  submitScore: (text, nat) -> (bool);
+}

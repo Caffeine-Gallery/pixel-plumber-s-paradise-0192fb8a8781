@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Clone</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="hud">
+            <div class="score">Score: <span id="scoreDisplay">0</span></div>
+            <div class="lives">Lives: <span id="livesDisplay">3</span></div>
+        </div>
+        <div id="gameOver" class="game-over hidden">
+            <h2>Game Over</h2>
+            <div class="score-submit">
+                <input type="text" id="playerName" placeholder="Enter your name">
+                <button id="submitScore">Submit Score</button>
+            </div>
+            <button id="restartGame">Play Again</button>
+        </div>
+        <div class="loading hidden">
+            <i data-feather="loader"></i>
+        </div>
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
